@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontak - Agro Flow</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light agro-navbar">
+      <div class="container">
+        <a class="navbar-brand agro-brand" href="index.html">🌿 Agro Flow</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto agro-navlink">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="informasi-komoditas.html"
+                >Informasi Komoditas</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="fitur.html">Fitur</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="market-komoditas.html">Market</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="kontak.html">Kontak</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="agro-page-header">
+      <div class="container text-center">
+        <h2 class="agro-section-title">Kontak Agro Flow</h2>
+        <p class="agro-muted">
+          Hubungi kami untuk informasi lebih lanjut atau kerja sama program
+          pertanian desa.
+        </p>
+      </div>
+    </section>
+
+    <!-- Form Kontak -->
+    <section class="agro-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-7">
+            <div class="agro-card">
+              <h4 class="fw-bold text-success">Kirim Pesan</h4>
+              <p class="text-muted">
+                Isi form berikut untuk menghubungi tim Agro Flow.
+              </p>
+
+              <form>
+                <div class="mb-3">
+                  <label class="form-label fw-semibold">Nama</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Masukkan nama anda"
+                    required
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label fw-semibold">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Masukkan email anda"
+                    required
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label fw-semibold">Pesan</label>
+                  <textarea
+                    class="form-control"
+                    rows="4"
+                    placeholder="Tulis pesan anda..."
+                    required
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="btn agro-btn-green w-100">
+                  Kirim Pesan
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="agro-footer">
+      <div class="container text-center">
+        <h5>🌿 Agro Flow</h5>
+        <p>Website pertanian desa berbasis cuaca & kalender tanam.</p>
+        <p class="agro-copy">© 2026 Agro Flow</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

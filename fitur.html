@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fitur - Agro Flow</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light agro-navbar">
+      <div class="container">
+        <a class="navbar-brand agro-brand" href="index.html">🌿 Agro Flow</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto agro-navlink">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="informasi-komoditas.html"
+                >Informasi Komoditas</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="fitur.html">Fitur</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="market-komoditas.html">Market</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="kontak.html">Kontak</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="agro-page-header">
+      <div class="container text-center">
+        <h2 class="agro-section-title">Fitur Agro Flow</h2>
+        <p class="agro-muted">
+          Sistem informasi cuaca, kalender musim tanam, dan perencanaan jadwal
+          tanam otomatis.
+        </p>
+      </div>
+    </section>
+
+    <section class="agro-section">
+      <div class="container">
+        <div class="row g-4 mb-4">
+          <div class="col-md-4">
+            <div class="agro-card">
+              <h5 class="fw-bold text-success">Informasi Cuaca</h5>
+              <p>
+                Menampilkan informasi cuaca harian seperti suhu, kelembaban, dan
+                prediksi hujan. (Nanti bisa dihubungkan API cuaca).
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="agro-card">
+              <h5 class="fw-bold text-success">Kalender Musim Tanam</h5>
+              <p>
+                Menyediakan informasi jadwal musim tanam untuk padi, jagung, dan
+                singkong berdasarkan kondisi iklim.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="agro-card">
+              <h5 class="fw-bold text-success">Plan Kalender Otomatis</h5>
+              <p>
+                Input tanggal tanam dan komoditas, lalu Agro Flow membuat jadwal
+                perawatan hingga panen.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form Input -->
+        <div class="agro-card">
+          <h4 class="fw-bold text-success">Buat Jadwal Tanam Otomatis</h4>
+          <p class="text-muted">
+            Masukkan tanggal mulai tanam untuk mendapatkan jadwal tahapan
+            budidaya hingga panen.
+          </p>
+
+          <div class="row g-3">
+            <div class="col-md-4">
+              <label class="form-label fw-semibold">Pilih Komoditas</label>
+              <select class="form-select" id="komoditas">
+                <option value="padi">Padi</option>
+                <option value="jagung">Jagung</option>
+                <option value="singkong">Singkong</option>
+              </select>
+            </div>
+
+            <div class="col-md-4">
+              <label class="form-label fw-semibold">Tanggal Mulai Tanam</label>
+              <input type="date" class="form-control" id="tanggalTanam" />
+            </div>
+
+            <div class="col-md-4 d-flex align-items-end">
+              <button class="btn agro-btn-green w-100" onclick="buatRencana()">
+                Buat Kalender
+              </button>
+            </div>
+          </div>
+
+          <hr class="my-4" />
+          <div id="hasilPlan"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="agro-footer">
+      <div class="container text-center">
+        <h5>🌿 Agro Flow</h5>
+        <p>Website pertanian desa berbasis cuaca & kalender tanam.</p>
+        <p class="agro-copy">© 2026 Agro Flow</p>
+      </div>
+    </footer>
+
+    <script>
+      function buatRencana() {
+        const komoditas = document.getElementById("komoditas").value;
+        const tanggalInput = document.getElementById("tanggalTanam").value;
+        const hasil = document.getElementById("hasilPlan");
+
+        if (!tanggalInput) {
+          hasil.innerHTML = `<div class="alert alert-danger">⚠ Silakan pilih tanggal mulai tanam terlebih dahulu.</div>`;
+          return;
+        }
+
+        const tanggalTanam = new Date(tanggalInput);
+
+        let hariPanen = 0;
+        let namaKomoditas = "";
+
+        if (komoditas === "padi") {
+          hariPanen = 110;
+          namaKomoditas = "Padi";
+        } else if (komoditas === "jagung") {
+          hariPanen = 95;
+          namaKomoditas = "Jagung";
+        } else if (komoditas === "singkong") {
+          hariPanen = 270;
+          namaKomoditas = "Singkong";
+        }
+
+        const tanggalPanen = new Date(tanggalTanam);
+        tanggalPanen.setDate(tanggalPanen.getDate() + hariPanen);
+
+        const jadwal = [
+          { tahap: "Pengolahan Lahan", hari: 0 },
+          { tahap: "Penanaman", hari: 7 },
+          { tahap: "Pemupukan Pertama", hari: 21 },
+          { tahap: "Pemupukan Kedua", hari: 45 },
+          { tahap: "Pengendalian Hama", hari: 60 },
+          { tahap: "Perawatan Intensif", hari: 75 },
+          { tahap: "Estimasi Panen", hari: hariPanen },
+        ];
+
+        let tableHTML = `
+        <div class="alert alert-success">
+          ✅ Jadwal tanam untuk <b>${namaKomoditas}</b> berhasil dibuat.
+        </div>
+
+        <p class="text-muted">
+          Tanggal mulai tanam: <b>${tanggalTanam.toLocaleDateString("id-ID")}</b><br>
+          Perkiraan panen: <b>${tanggalPanen.toLocaleDateString("id-ID")}</b>
+        </p>
+
+        <div class="table-responsive">
+          <table class="table table-bordered text-center align-middle">
+            <thead class="table-success">
+              <tr>
+                <th>Tahapan</th>
+                <th>Tanggal Rekomendasi</th>
+              </tr>
+            </thead>
+            <tbody>
+      `;
+
+        jadwal.forEach((item) => {
+          const tgl = new Date(tanggalTanam);
+          tgl.setDate(tgl.getDate() + item.hari);
+
+          tableHTML += `
+          <tr>
+            <td><b>${item.tahap}</b></td>
+            <td>${tgl.toLocaleDateString("id-ID")}</td>
+          </tr>
+        `;
+        });
+
+        tableHTML += `
+            </tbody>
+          </table>
+        </div>
+      `;
+
+        hasil.innerHTML = tableHTML;
+      }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
