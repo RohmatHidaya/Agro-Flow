@@ -1,3 +1,8 @@
+:root {
+  --primary: #2e7d32;
+  --bg: #d2ff72;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   background-color: #f7fff7;
@@ -146,4 +151,21 @@ canvas {
 
 .alert {
   border-radius: 16px;
+}
+
+.nav-pills .nav-link {
+  background: white;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  margin: 0 5px;
+  border-radius: 10px;
+}
+
+.nav-pills .nav-link.active {
+  background: var(--primary) !important;
+  color: white !important;
+}
+
+.nav-pills .nav-link:hover {
+  color: var(--primary);
 }
