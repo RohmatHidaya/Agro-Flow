@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Analisis Pasar - Agro Flow</title>
+
+    <link rel="stylesheet" href="dashboard.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+
+  <body class="dashboard-body">
+    <!-- SIDEBAR -->
+    <aside class="dashboard-sidebar">
+      <div class="sidebar-logo">🌿 Agro Flow</div>
+
+      <ul class="sidebar-menu">
+        <li>
+          <a href="dashboard.html">
+            <i class="bi bi-grid-fill"></i>
+            Dashboard
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <i class="bi bi-cloud-sun-fill"></i>
+            Cuaca
+          </a>
+        </li>
+
+        <li>
+          <a class="active" href="analisis-pasar.html">
+            <i class="bi bi-graph-up-arrow"></i>
+            Analisis Pasar
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <i class="bi bi-calendar-check-fill"></i>
+            Jadwal Tanam
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <i class="bi bi-shop"></i>
+            Marketplace
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <i class="bi bi-person-fill"></i>
+            Profile
+          </a>
+        </li>
+      </ul>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="dashboard-main">
+      <!-- TOPBAR -->
+      <div class="dashboard-topbar">
+        <div class="d-flex align-items-center gap-4">
+          <a href="../index.html" class="back-home-btn">
+            <i class="bi bi-arrow-left-circle-fill"></i>
+          </a>
+
+          <div>
+            <h2 class="dashboard-title mb-1">Analisis Komoditas</h2>
+
+            <p class="dashboard-subtitle mb-0">
+              Monitoring tren harga dan peluang pasar komoditas
+            </p>
+          </div>
+        </div>
+
+        <div class="dashboard-user">
+          <i class="bi bi-person-circle"></i>
+          Rohmat
+        </div>
+      </div>
+
+      <!-- line chart Grafik Tren Harga Komoditas-->
+      <div class="dashboard-card mt-4">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <div>
+            <h4 class="fw-bold text-success">Grafik Tren Harga Komoditas</h4>
+
+            <p class="text-muted mb-0">
+              Analisis perubahan harga selama 6 bulan terakhir
+            </p>
+          </div>
+
+          <select class="form-select dashboard-filter">
+            <option>Beras</option>
+            <option>Jagung</option>
+            <option>Singkong</option>
+          </select>
+        </div>
+
+        <canvas id="marketChart"></canvas>
+      </div>
+
+      <!-- ANALISIS Perbandingan Harga Antar Kecamatan-->
+      <div class="row mt-4">
+        <!-- PERBANDINGAN -->
+        <div class="col-12">
+          <div class="dashboard-card h-100">
+            <h4 class="fw-bold text-success mb-4">
+              Perbandingan Harga Antar Kecamatan
+            </h4>
+
+            <canvas id="wilayahChart"></canvas>
+          </div>
+        </div>
+      </div>
+
+      <!-- PIE CHART Distribusi Komoditas Terlaris-->
+      <div class="dashboard-card mt-4">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <div>
+            <h4 class="fw-bold text-success">Distribusi Komoditas Terlaris</h4>
+
+            <p class="text-muted mb-0">
+              Persentase komoditas yang paling banyak terjual di marketplace
+            </p>
+          </div>
+
+          <button class="btn market-btn">Detail Penjualan</button>
+        </div>
+
+        <div class="row align-items-center">
+          <!-- CHART -->
+          <div class="col-lg-6">
+            <div class="pie-chart-container">
+              <canvas id="komoditasPieChart"></canvas>
+            </div>
+          </div>
+
+          <!-- INFO -->
+          <div class="col-lg-6">
+            <div class="chart-info-list">
+              <div class="chart-info-item">
+                <div class="chart-color bg-success"></div>
+
+                <div>
+                  <h5 class="mb-1">Beras</h5>
+                  <p class="text-muted mb-0">
+                    Komoditas paling banyak dibeli petani dan masyarakat.
+                  </p>
+                </div>
+
+                <span class="chart-percent">45%</span>
+              </div>
+
+              <div class="chart-info-item">
+                <div class="chart-color bg-warning"></div>
+
+                <div>
+                  <h5 class="mb-1">Jagung</h5>
+                  <p class="text-muted mb-0">
+                    Stabil untuk kebutuhan pakan ternak dan industri.
+                  </p>
+                </div>
+
+                <span class="chart-percent">30%</span>
+              </div>
+
+              <div class="chart-info-item">
+                <div class="chart-color bg-danger"></div>
+
+                <div>
+                  <h5 class="mb-1">Singkong</h5>
+                  <p class="text-muted mb-0">
+                    Banyak dipasarkan sebagai bahan pangan lokal.
+                  </p>
+                </div>
+
+                <span class="chart-percent">25%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TABLE -->
+      <div class="dashboard-card mt-4">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <div>
+            <h4 class="fw-bold text-success">Data Harga Pasar</h4>
+
+            <p class="text-muted mb-0">
+              Data harga terbaru di beberapa kecamatan
+            </p>
+          </div>
+
+          <button class="btn market-btn">Export Data</button>
+        </div>
+
+        <div class="table-responsive">
+          <table class="table align-middle">
+            <thead>
+              <tr>
+                <th>Kecamatan</th>
+                <th>Komoditas</th>
+                <th>Harga</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Kemiling</td>
+                <td>Beras</td>
+                <td>Rp 14.500/kg</td>
+                <td>
+                  <span class="badge bg-success"> Naik </span>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Kedaton</td>
+                <td>Jagung</td>
+                <td>Rp 6.200/kg</td>
+                <td>
+                  <span class="badge bg-warning text-dark"> Stabil </span>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Tanjung Karang</td>
+                <td>Singkong</td>
+                <td>Rp 2.700/kg</td>
+                <td>
+                  <span class="badge bg-danger"> Turun </span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="dashboard.js"></script>
+  </body>
+</html>
