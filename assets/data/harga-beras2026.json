@@ -1,0 +1,722 @@
+[
+  {
+    "tanggal": "2026-01-01",
+    "harga_aktual": 14950,
+    "harga_prediksi": 14900
+  },
+  {
+    "tanggal": "2026-01-02",
+    "harga_aktual": 14965,
+    "harga_prediksi": 14955
+  },
+  {
+    "tanggal": "2026-01-03",
+    "harga_aktual": 14980,
+    "harga_prediksi": 14970
+  },
+  {
+    "tanggal": "2026-01-04",
+    "harga_aktual": 14975,
+    "harga_prediksi": 14985
+  },
+  {
+    "tanggal": "2026-01-05",
+    "harga_aktual": 15000,
+    "harga_prediksi": 14990
+  },
+  {
+    "tanggal": "2026-01-06",
+    "harga_aktual": 15020,
+    "harga_prediksi": 15010
+  },
+  {
+    "tanggal": "2026-01-07",
+    "harga_aktual": 15050,
+    "harga_prediksi": 15030
+  },
+  {
+    "tanggal": "2026-01-08",
+    "harga_aktual": 15040,
+    "harga_prediksi": 15060
+  },
+  {
+    "tanggal": "2026-01-09",
+    "harga_aktual": 15060,
+    "harga_prediksi": 15055
+  },
+  {
+    "tanggal": "2026-01-10",
+    "harga_aktual": 15080,
+    "harga_prediksi": 15070
+  },
+  {
+    "tanggal": "2026-01-11",
+    "harga_aktual": 15075,
+    "harga_prediksi": 15085
+  },
+  {
+    "tanggal": "2026-01-12",
+    "harga_aktual": 15100,
+    "harga_prediksi": 15090
+  },
+  {
+    "tanggal": "2026-01-13",
+    "harga_aktual": 15120,
+    "harga_prediksi": 15110
+  },
+  {
+    "tanggal": "2026-01-14",
+    "harga_aktual": 15110,
+    "harga_prediksi": 15130
+  },
+  {
+    "tanggal": "2026-01-15",
+    "harga_aktual": 15150,
+    "harga_prediksi": 15125
+  },
+  {
+    "tanggal": "2026-01-16",
+    "harga_aktual": 15140,
+    "harga_prediksi": 15160
+  },
+  {
+    "tanggal": "2026-01-17",
+    "harga_aktual": 15130,
+    "harga_prediksi": 15145
+  },
+  {
+    "tanggal": "2026-01-18",
+    "harga_aktual": 15125,
+    "harga_prediksi": 15135
+  },
+  {
+    "tanggal": "2026-01-19",
+    "harga_aktual": 15150,
+    "harga_prediksi": 15140
+  },
+  {
+    "tanggal": "2026-01-20",
+    "harga_aktual": 15175,
+    "harga_prediksi": 15160
+  },
+  {
+    "tanggal": "2026-01-21",
+    "harga_aktual": 15160,
+    "harga_prediksi": 15180
+  },
+  {
+    "tanggal": "2026-01-22",
+    "harga_aktual": 15180,
+    "harga_prediksi": 15175
+  },
+  {
+    "tanggal": "2026-01-23",
+    "harga_aktual": 15200,
+    "harga_prediksi": 15190
+  },
+  {
+    "tanggal": "2026-01-24",
+    "harga_aktual": 15210,
+    "harga_prediksi": 15205
+  },
+  {
+    "tanggal": "2026-01-25",
+    "harga_aktual": 15190,
+    "harga_prediksi": 15215
+  },
+  {
+    "tanggal": "2026-01-26",
+    "harga_aktual": 15185,
+    "harga_prediksi": 15200
+  },
+  {
+    "tanggal": "2026-01-27",
+    "harga_aktual": 15170,
+    "harga_prediksi": 15180
+  },
+  {
+    "tanggal": "2026-01-28",
+    "harga_aktual": 15150,
+    "harga_prediksi": 15165
+  },
+  {
+    "tanggal": "2026-01-29",
+    "harga_aktual": 15140,
+    "harga_prediksi": 15155
+  },
+  {
+    "tanggal": "2026-01-30",
+    "harga_aktual": 15125,
+    "harga_prediksi": 15140
+  },
+  {
+    "tanggal": "2026-01-31",
+    "harga_aktual": 15110,
+    "harga_prediksi": 15120
+  },
+  {
+    "tanggal": "2026-02-01",
+    "harga_aktual": 15100,
+    "harga_prediksi": 15105
+  },
+  {
+    "tanggal": "2026-02-02",
+    "harga_aktual": 15080,
+    "harga_prediksi": 15095
+  },
+  {
+    "tanggal": "2026-02-03",
+    "harga_aktual": 15070,
+    "harga_prediksi": 15080
+  },
+  {
+    "tanggal": "2026-02-04",
+    "harga_aktual": 15055,
+    "harga_prediksi": 15065
+  },
+  {
+    "tanggal": "2026-02-05",
+    "harga_aktual": 15040,
+    "harga_prediksi": 15050
+  },
+  {
+    "tanggal": "2026-02-06",
+    "harga_aktual": 15025,
+    "harga_prediksi": 15035
+  },
+  {
+    "tanggal": "2026-02-07",
+    "harga_aktual": 15010,
+    "harga_prediksi": 15020
+  },
+  {
+    "tanggal": "2026-02-08",
+    "harga_aktual": 15000,
+    "harga_prediksi": 15010
+  },
+  {
+    "tanggal": "2026-02-09",
+    "harga_aktual": 14980,
+    "harga_prediksi": 14995
+  },
+  {
+    "tanggal": "2026-02-10",
+    "harga_aktual": 14965,
+    "harga_prediksi": 14975
+  },
+  {
+    "tanggal": "2026-02-11",
+    "harga_aktual": 14950,
+    "harga_prediksi": 14960
+  },
+  {
+    "tanggal": "2026-02-12",
+    "harga_aktual": 14940,
+    "harga_prediksi": 14945
+  },
+  {
+    "tanggal": "2026-02-13",
+    "harga_aktual": 14925,
+    "harga_prediksi": 14935
+  },
+  {
+    "tanggal": "2026-02-14",
+    "harga_aktual": 14910,
+    "harga_prediksi": 14920
+  },
+  {
+    "tanggal": "2026-02-15",
+    "harga_aktual": 14900,
+    "harga_prediksi": 14905
+  },
+  {
+    "tanggal": "2026-02-16",
+    "harga_aktual": 14885,
+    "harga_prediksi": 14895
+  },
+  {
+    "tanggal": "2026-02-17",
+    "harga_aktual": 14870,
+    "harga_prediksi": 14880
+  },
+  {
+    "tanggal": "2026-02-18",
+    "harga_aktual": 14850,
+    "harga_prediksi": 14865
+  },
+  {
+    "tanggal": "2026-02-19",
+    "harga_aktual": 14835,
+    "harga_prediksi": 14845
+  },
+  {
+    "tanggal": "2026-02-20",
+    "harga_aktual": 14820,
+    "harga_prediksi": 14830
+  },
+  {
+    "tanggal": "2026-02-21",
+    "harga_aktual": 14800,
+    "harga_prediksi": 14815
+  },
+  {
+    "tanggal": "2026-02-22",
+    "harga_aktual": 14785,
+    "harga_prediksi": 14795
+  },
+  {
+    "tanggal": "2026-02-23",
+    "harga_aktual": 14770,
+    "harga_prediksi": 14780
+  },
+  {
+    "tanggal": "2026-02-24",
+    "harga_aktual": 14755,
+    "harga_prediksi": 14765
+  },
+  {
+    "tanggal": "2026-02-25",
+    "harga_aktual": 14740,
+    "harga_prediksi": 14750
+  },
+  {
+    "tanggal": "2026-02-26",
+    "harga_aktual": 14725,
+    "harga_prediksi": 14735
+  },
+  {
+    "tanggal": "2026-02-27",
+    "harga_aktual": 14710,
+    "harga_prediksi": 14720
+  },
+  {
+    "tanggal": "2026-02-28",
+    "harga_aktual": 14690,
+    "harga_prediksi": 14705
+  },
+  {
+    "tanggal": "2026-03-01",
+    "harga_aktual": 14670,
+    "harga_prediksi": 14685
+  },
+  {
+    "tanggal": "2026-03-02",
+    "harga_aktual": 14650,
+    "harga_prediksi": 14665
+  },
+  {
+    "tanggal": "2026-03-03",
+    "harga_aktual": 14630,
+    "harga_prediksi": 14645
+  },
+  {
+    "tanggal": "2026-03-04",
+    "harga_aktual": 14610,
+    "harga_prediksi": 14625
+  },
+  {
+    "tanggal": "2026-03-05",
+    "harga_aktual": 14590,
+    "harga_prediksi": 14605
+  },
+  {
+    "tanggal": "2026-03-06",
+    "harga_aktual": 14570,
+    "harga_prediksi": 14585
+  },
+  {
+    "tanggal": "2026-03-07",
+    "harga_aktual": 14550,
+    "harga_prediksi": 14565
+  },
+  {
+    "tanggal": "2026-03-08",
+    "harga_aktual": 14530,
+    "harga_prediksi": 14545
+  },
+  {
+    "tanggal": "2026-03-09",
+    "harga_aktual": 14510,
+    "harga_prediksi": 14525
+  },
+  {
+    "tanggal": "2026-03-10",
+    "harga_aktual": 14490,
+    "harga_prediksi": 14505
+  },
+  {
+    "tanggal": "2026-03-11",
+    "harga_aktual": 14470,
+    "harga_prediksi": 14485
+  },
+  {
+    "tanggal": "2026-03-12",
+    "harga_aktual": 14450,
+    "harga_prediksi": 14465
+  },
+  {
+    "tanggal": "2026-03-13",
+    "harga_aktual": 14430,
+    "harga_prediksi": 14445
+  },
+  {
+    "tanggal": "2026-03-14",
+    "harga_aktual": 14410,
+    "harga_prediksi": 14425
+  },
+  {
+    "tanggal": "2026-03-15",
+    "harga_aktual": 14390,
+    "harga_prediksi": 14405
+  },
+  {
+    "tanggal": "2026-03-16",
+    "harga_aktual": 14370,
+    "harga_prediksi": 14385
+  },
+  {
+    "tanggal": "2026-03-17",
+    "harga_aktual": 14350,
+    "harga_prediksi": 14365
+  },
+  {
+    "tanggal": "2026-03-18",
+    "harga_aktual": 14330,
+    "harga_prediksi": 14345
+  },
+  {
+    "tanggal": "2026-03-19",
+    "harga_aktual": 14310,
+    "harga_prediksi": 14325
+  },
+  {
+    "tanggal": "2026-03-20",
+    "harga_aktual": 14290,
+    "harga_prediksi": 14305
+  },
+  {
+    "tanggal": "2026-03-21",
+    "harga_aktual": 14270,
+    "harga_prediksi": 14285
+  },
+  {
+    "tanggal": "2026-03-22",
+    "harga_aktual": 14250,
+    "harga_prediksi": 14265
+  },
+  {
+    "tanggal": "2026-03-23",
+    "harga_aktual": 14230,
+    "harga_prediksi": 14245
+  },
+  {
+    "tanggal": "2026-03-24",
+    "harga_aktual": 14210,
+    "harga_prediksi": 14225
+  },
+  {
+    "tanggal": "2026-03-25",
+    "harga_aktual": 14190,
+    "harga_prediksi": 14205
+  },
+  {
+    "tanggal": "2026-03-26",
+    "harga_aktual": 14170,
+    "harga_prediksi": 14185
+  },
+  {
+    "tanggal": "2026-03-27",
+    "harga_aktual": 14155,
+    "harga_prediksi": 14165
+  },
+  {
+    "tanggal": "2026-03-28",
+    "harga_aktual": 14140,
+    "harga_prediksi": 14150
+  },
+  {
+    "tanggal": "2026-03-29",
+    "harga_aktual": 14125,
+    "harga_prediksi": 14135
+  },
+  {
+    "tanggal": "2026-03-30",
+    "harga_aktual": 14110,
+    "harga_prediksi": 14120
+  },
+  {
+    "tanggal": "2026-03-31",
+    "harga_aktual": 14100,
+    "harga_prediksi": 14105
+  },
+  {
+    "tanggal": "2026-04-01",
+    "harga_aktual": 14090,
+    "harga_prediksi": 14095
+  },
+  {
+    "tanggal": "2026-04-02",
+    "harga_aktual": 14080,
+    "harga_prediksi": 14085
+  },
+  {
+    "tanggal": "2026-04-03",
+    "harga_aktual": 14075,
+    "harga_prediksi": 14080
+  },
+  {
+    "tanggal": "2026-04-04",
+    "harga_aktual": 14070,
+    "harga_prediksi": 14075
+  },
+  {
+    "tanggal": "2026-04-05",
+    "harga_aktual": 14065,
+    "harga_prediksi": 14070
+  },
+  {
+    "tanggal": "2026-04-06",
+    "harga_aktual": 14070,
+    "harga_prediksi": 14065
+  },
+  {
+    "tanggal": "2026-04-07",
+    "harga_aktual": 14080,
+    "harga_prediksi": 14075
+  },
+  {
+    "tanggal": "2026-04-08",
+    "harga_aktual": 14095,
+    "harga_prediksi": 14085
+  },
+  {
+    "tanggal": "2026-04-09",
+    "harga_aktual": 14110,
+    "harga_prediksi": 14100
+  },
+  {
+    "tanggal": "2026-04-10",
+    "harga_aktual": 14125,
+    "harga_prediksi": 14115
+  },
+  {
+    "tanggal": "2026-04-11",
+    "harga_aktual": 14140,
+    "harga_prediksi": 14130
+  },
+  {
+    "tanggal": "2026-04-12",
+    "harga_aktual": 14155,
+    "harga_prediksi": 14145
+  },
+  {
+    "tanggal": "2026-04-13",
+    "harga_aktual": 14170,
+    "harga_prediksi": 14160
+  },
+  {
+    "tanggal": "2026-04-14",
+    "harga_aktual": 14190,
+    "harga_prediksi": 14180
+  },
+  {
+    "tanggal": "2026-04-15",
+    "harga_aktual": 14210,
+    "harga_prediksi": 14200
+  },
+  {
+    "tanggal": "2026-04-16",
+    "harga_aktual": 14230,
+    "harga_prediksi": 14220
+  },
+  {
+    "tanggal": "2026-04-17",
+    "harga_aktual": 14250,
+    "harga_prediksi": 14240
+  },
+  {
+    "tanggal": "2026-04-18",
+    "harga_aktual": 14275,
+    "harga_prediksi": 14260
+  },
+  {
+    "tanggal": "2026-04-19",
+    "harga_aktual": 14300,
+    "harga_prediksi": 14285
+  },
+  {
+    "tanggal": "2026-04-20",
+    "harga_aktual": 14320,
+    "harga_prediksi": 14310
+  },
+  {
+    "tanggal": "2026-04-21",
+    "harga_aktual": 14345,
+    "harga_prediksi": 14330
+  },
+  {
+    "tanggal": "2026-04-22",
+    "harga_aktual": 14370,
+    "harga_prediksi": 14355
+  },
+  {
+    "tanggal": "2026-04-23",
+    "harga_aktual": 14390,
+    "harga_prediksi": 14380
+  },
+  {
+    "tanggal": "2026-04-24",
+    "harga_aktual": 14415,
+    "harga_prediksi": 14400
+  },
+  {
+    "tanggal": "2026-04-25",
+    "harga_aktual": 14440,
+    "harga_prediksi": 14425
+  },
+  {
+    "tanggal": "2026-04-26",
+    "harga_aktual": 14460,
+    "harga_prediksi": 14450
+  },
+  {
+    "tanggal": "2026-04-27",
+    "harga_aktual": 14485,
+    "harga_prediksi": 14470
+  },
+  {
+    "tanggal": "2026-04-28",
+    "harga_aktual": 14510,
+    "harga_prediksi": 14495
+  },
+  {
+    "tanggal": "2026-04-29",
+    "harga_aktual": 14535,
+    "harga_prediksi": 14520
+  },
+  {
+    "tanggal": "2026-04-30",
+    "harga_aktual": 14560,
+    "harga_prediksi": 14545
+  },
+  {
+    "tanggal": "2026-05-01",
+    "harga_aktual": 14580,
+    "harga_prediksi": 14570
+  },
+  {
+    "tanggal": "2026-05-02",
+    "harga_aktual": 14605,
+    "harga_prediksi": 14590
+  },
+  {
+    "tanggal": "2026-05-03",
+    "harga_aktual": 14630,
+    "harga_prediksi": 14615
+  },
+  {
+    "tanggal": "2026-05-04",
+    "harga_aktual": 14655,
+    "harga_prediksi": 14640
+  },
+  {
+    "tanggal": "2026-05-05",
+    "harga_aktual": 14680,
+    "harga_prediksi": 14665
+  },
+  {
+    "tanggal": "2026-05-06",
+    "harga_aktual": 14700,
+    "harga_prediksi": 14690
+  },
+  {
+    "tanggal": "2026-05-07",
+    "harga_aktual": 14725,
+    "harga_prediksi": 14710
+  },
+  {
+    "tanggal": "2026-05-08",
+    "harga_aktual": 14750,
+    "harga_prediksi": 14735
+  },
+  {
+    "tanggal": "2026-05-09",
+    "harga_aktual": 14775,
+    "harga_prediksi": 14760
+  },
+  {
+    "tanggal": "2026-05-10",
+    "harga_aktual": 14800,
+    "harga_prediksi": 14785
+  },
+  {
+    "tanggal": "2026-05-11",
+    "harga_aktual": 14820,
+    "harga_prediksi": 14810
+  },
+  {
+    "tanggal": "2026-05-12",
+    "harga_aktual": 14845,
+    "harga_prediksi": 14830
+  },
+  {
+    "tanggal": "2026-05-13",
+    "harga_aktual": 14870,
+    "harga_prediksi": 14855
+  },
+  {
+    "tanggal": "2026-05-14",
+    "harga_aktual": 14890,
+    "harga_prediksi": 14880
+  },
+  {
+    "tanggal": "2026-05-15",
+    "harga_aktual": 14915,
+    "harga_prediksi": 14900
+  },
+  {
+    "tanggal": "2026-05-16",
+    "harga_aktual": 14940,
+    "harga_prediksi": 14925
+  },
+   {
+    "tanggal": "2026-01-01",
+    "harga_aktual": 14950,
+    "harga_prediksi": null
+  },
+  {
+    "tanggal": "2026-02-01",
+    "harga_aktual": 15100,
+    "harga_prediksi": null
+  },
+  {
+    "tanggal": "2026-03-01",
+    "harga_aktual": 15300,
+    "harga_prediksi": null
+  },
+  {
+    "tanggal": "2026-04-01",
+    "harga_aktual": 15500,
+    "harga_prediksi": null
+  },
+  {
+    "tanggal": "2026-05-01",
+    "harga_aktual": 15800,
+    "harga_prediksi": null
+  },
+  {
+    "tanggal": "2026-06-01",
+    "harga_aktual": null,
+    "harga_prediksi": 15950
+  },
+  {
+    "tanggal": "2026-07-01",
+    "harga_aktual": null,
+    "harga_prediksi": 16100
+  },
+  {
+    "tanggal": "2026-08-01",
+    "harga_aktual": null,
+    "harga_prediksi": 16250
+  }
+]

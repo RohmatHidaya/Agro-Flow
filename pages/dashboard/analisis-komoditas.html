@@ -6,7 +6,7 @@
 
     <title>Analisis Pasar - Agro Flow</title>
 
-    <link rel="stylesheet" href="dashboard.css" />
+    <link rel="stylesheet" href="../../assets/css/dashboard.css" />
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -42,7 +42,7 @@
         <li>
           <a class="active" href="analisis-pasar.html">
             <i class="bi bi-graph-up-arrow"></i>
-            Analisis Pasar
+            Analisis Komoditas
           </a>
         </li>
 
@@ -73,45 +73,72 @@
     <main class="dashboard-main">
       <!-- TOPBAR -->
       <div class="dashboard-topbar">
-        <div class="d-flex align-items-center gap-4">
-          <a href="../index.html" class="back-home-btn">
-            <i class="bi bi-arrow-left-circle-fill"></i>
-          </a>
+        <div>
+          <h2 class="dashboard-title mb-1">Analisis Komoditas</h2>
 
-          <div>
-            <h2 class="dashboard-title mb-1">Analisis Komoditas</h2>
-
-            <p class="dashboard-subtitle mb-0">
-              Monitoring tren harga dan peluang pasar komoditas
-            </p>
-          </div>
+          <p class="dashboard-subtitle mb-0">
+            Monitoring tren harga dan peluang pasar komoditas
+          </p>
         </div>
 
-        <div class="dashboard-user">
-          <i class="bi bi-person-circle"></i>
-          Rohmat
+        <div class="dropdown">
+          <button
+            class="dashboard-user dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i class="bi bi-person-circle"></i>
+            Rohmat
+          </button>
+
+          <ul class="dropdown-menu dropdown-menu-end shadow border-0">
+            <li>
+              <a class="dropdown-item" href="../../index.html">
+                Landing Page
+              </a>
+            </li>
+
+            <li>
+              <a class="dropdown-item" href="#"> Profile </a>
+            </li>
+
+            <li><hr class="dropdown-divider" /></li>
+
+            <li>
+              <a class="dropdown-item text-danger" href="#"> Logout </a>
+            </li>
+          </ul>
         </div>
       </div>
 
-      <!-- line chart Grafik Tren Harga Komoditas-->
+      <!-- PREDIKSI HARGA MUSIMAN -->
       <div class="dashboard-card mt-4">
         <div class="d-flex justify-content-between align-items-center mb-4">
           <div>
-            <h4 class="fw-bold text-success">Grafik Tren Harga Komoditas</h4>
+            <h4 class="fw-bold text-success">Prediksi Harga Komoditas</h4>
 
             <p class="text-muted mb-0">
-              Analisis perubahan harga selama 6 bulan terakhir
+              Analisis pola harga beras selama 12 bulan dan prediksi bulan
+              berikutnya
             </p>
           </div>
 
-          <select class="form-select dashboard-filter">
+          <select class="form-select w-auto">
             <option>Beras</option>
             <option>Jagung</option>
             <option>Singkong</option>
           </select>
         </div>
 
-        <canvas id="marketChart"></canvas>
+        <canvas id="prediksiChart"></canvas>
+
+        <!-- Insight -->
+        <div class="alert alert-warning mt-4 mb-0">
+          <strong>Insight:</strong>
+          Harga diprediksi mengalami kenaikan pada musim panen berakhir akibat
+          berkurangnya pasokan di pasar.
+        </div>
       </div>
 
       <!-- ANALISIS Perbandingan Harga Antar Kecamatan-->
@@ -196,65 +223,69 @@
         </div>
       </div>
 
-      <!-- TABLE -->
+      <!-- HISTOGRAM Distribusi Harga Komoditas -->
       <div class="dashboard-card mt-4">
         <div class="d-flex justify-content-between align-items-center mb-4">
           <div>
-            <h4 class="fw-bold text-success">Data Harga Pasar</h4>
+            <h4 class="fw-bold text-success">
+              Histogram Distribusi Harga Komoditas
+            </h4>
 
             <p class="text-muted mb-0">
-              Data harga terbaru di beberapa kecamatan
+              Persebaran harga Komoditas berdasarkan jumlah kecamatan
             </p>
           </div>
 
-          <button class="btn market-btn">Export Data</button>
+          <select class="form-select w-auto">
+            <option value="">Beras</option>
+            <option value="">Jagung</option>
+            <option value="">Singkong</option>
+          </select>
         </div>
 
-        <div class="table-responsive">
-          <table class="table align-middle">
-            <thead>
-              <tr>
-                <th>Kecamatan</th>
-                <th>Komoditas</th>
-                <th>Harga</th>
-                <th>Status</th>
-              </tr>
-            </thead>
+        <canvas id="histogramChart"></canvas>
 
-            <tbody>
-              <tr>
-                <td>Kemiling</td>
-                <td>Beras</td>
-                <td>Rp 14.500/kg</td>
-                <td>
-                  <span class="badge bg-success"> Naik </span>
-                </td>
-              </tr>
+        <!-- Insight -->
+        <div class="mt-4">
+          <div class="alert alert-success mb-0">
+            <strong>Insight:</strong>
+            Harga beras paling banyak berada pada rentang
+            <strong>Rp 12.000 - Rp 13.000</strong>
+            sehingga menunjukkan harga pasar relatif stabil di sebagian besar
+            kecamatan.
+          </div>
+        </div>
+      </div>
 
-              <tr>
-                <td>Kedaton</td>
-                <td>Jagung</td>
-                <td>Rp 6.200/kg</td>
-                <td>
-                  <span class="badge bg-warning text-dark"> Stabil </span>
-                </td>
-              </tr>
+      <!-- SCATTER PLOT -->
+      <div class="dashboard-card mt-4">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <div>
+            <h4 class="fw-bold text-success">
+              Hubungan Curah Hujan vs Harga Beras
+            </h4>
 
-              <tr>
-                <td>Tanjung Karang</td>
-                <td>Singkong</td>
-                <td>Rp 2.700/kg</td>
-                <td>
-                  <span class="badge bg-danger"> Turun </span>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+            <p class="text-muted mb-0">
+              Analisis pengaruh curah hujan terhadap perubahan harga komoditas
+            </p>
+          </div>
+
+          <button class="btn market-btn">Analisis Iklim</button>
+        </div>
+
+        <canvas id="scatterChart"></canvas>
+
+        <!-- Insight -->
+        <div class="alert alert-info mt-4 mb-0">
+          <strong>Insight:</strong>
+          Curah hujan yang tinggi cenderung menyebabkan kenaikan harga akibat
+          gangguan distribusi dan penurunan kualitas panen.
         </div>
       </div>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="dashboard.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/js/dashboard.js"></script>
   </body>
 </html>
