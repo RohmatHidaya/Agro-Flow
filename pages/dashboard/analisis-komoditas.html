@@ -146,9 +146,38 @@
         <!-- PERBANDINGAN -->
         <div class="col-12">
           <div class="dashboard-card h-100">
-            <h4 class="fw-bold text-success mb-4">
-              Perbandingan Harga Antar Kecamatan
-            </h4>
+            <div class="d-flex justify-content-between align-items-center mb-4">
+              <h4 class="fw-bold text-success mb-4">
+                Perbandingan Harga Antar Kecamatan
+              </h4>
+
+              <div class="d-flex gap-2 flex-wrap">
+                <!-- Filter Provinsi -->
+                <select class="form-select w-auto" id="provinsiFilter">
+                  <option value="">Pilih Provinsi</option>
+                  <option value="lampung">Lampung</option>
+                  <option value="bengkulu">Bengkulu</option>
+                  <option value="sumsel">Sumatera Selatan</option>
+                  <option value="jambi">Jambi</option>
+                </select>
+
+                <!-- filter kabupaten -->
+                <select class="form-select w-auto" id="kabupatenFilter">
+                  <option value="">Pilih Kabupaten/Kota</option>
+                  <option value="bengkulu">Kota Bandar Lampung</option>
+                  <option value="sumsel">Kota Metro</option>
+                  <option value="jambi">Lampung Selatan</option>
+                </select>
+
+                <!-- filter komoditas -->
+                <select class="form-select w-auto">
+                  <option>Pilih Komoditas</option>
+                  <option>Beras</option>
+                  <option>Jagung</option>
+                  <option>Singkong</option>
+                </select>
+              </div>
+            </div>
 
             <canvas id="wilayahChart"></canvas>
           </div>

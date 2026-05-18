@@ -154,35 +154,58 @@ new Chart(marketCtx, {
 
 const histogramCtx = document.getElementById("histogramChart");
 
+const labels = [
+  "10k",
+  "11k",
+  "12k",
+  "13k",
+  "14k",
+  "15k",
+  "16k",
+  "17k",
+  "18k",
+  "19k",
+];
+
+const histogramData = [400, 1800, 1400, 3000, 3500, 4200, 2000, 1200, 500, 100];
+
+const smoothLine = [200, 2100, 1300, 2700, 3400, 4000, 1800, 1400, 350, 50];
+
 new Chart(histogramCtx, {
   type: "bar",
 
   data: {
-    labels: [
-      "Rp 11rb - 12rb",
-      "Rp 12rb - 13rb",
-      "Rp 13rb - 14rb",
-      "Rp 14rb - 15rb",
-    ],
+    labels: labels,
 
     datasets: [
       {
-        label: "Jumlah Kecamatan",
+        type: "bar",
 
-        data: [5, 8, 4, 2],
+        label: "Frekuensi",
 
-        backgroundColor: [
-          "rgba(76, 175, 80, 0.7)",
-          "rgba(56, 142, 60, 0.8)",
-          "rgba(255, 193, 7, 0.8)",
-          "rgba(244, 67, 54, 0.8)",
-        ],
+        data: histogramData,
 
-        borderColor: ["#4caf50", "#388e3c", "#ffc107", "#f44336"],
+        backgroundColor: "rgba(46, 125, 50, 0.5)",
 
-        borderWidth: 2,
+        borderColor: "rgba(46, 125, 50, 1)",
 
-        borderRadius: 8,
+        borderWidth: 1,
+
+        borderRadius: 4,
+
+        barPercentage: 1.0,
+
+        categoryPercentage: 1.0,
+      },
+      {
+        type: "line",
+        label: "Distribusi",
+        data: smoothLine,
+        borderColor: "rgba(46, 125, 50, 1)",
+        borderWidth: 3,
+        tension: 0.4,
+        pointRadius: 0,
+        fill: false,
       },
     ],
   },
@@ -197,7 +220,7 @@ new Chart(histogramCtx, {
 
       title: {
         display: true,
-        text: "Distribusi Harga Beras per Kecamatan",
+        text: "Distribusi Harga Komoditas per Kecamatan",
       },
     },
 
@@ -211,14 +234,14 @@ new Chart(histogramCtx, {
 
         title: {
           display: true,
-          text: "Jumlah Kecamatan",
+          text: "Frequensi",
         },
       },
 
       x: {
         title: {
           display: true,
-          text: "Rentang Harga",
+          text: "harga(Rp)",
         },
       },
     },
