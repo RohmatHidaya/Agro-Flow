@@ -33,7 +33,7 @@
         </li>
 
         <li>
-          <a href="#">
+          <a href="cuaca.html">
             <i class="bi bi-cloud-sun-fill"></i>
             Cuaca
           </a>
@@ -56,7 +56,7 @@
         <li>
           <a class="active" href="toko.html">
             <i class="bi bi-shop"></i>
-            Toko
+            Toko Saya
           </a>
         </li>
 
@@ -116,55 +116,51 @@
         </div>
       </div>
 
-      <!-- STATS -->
-      <div class="row g-4">
+      <!-- STATS SIMPLE -->
+      <div class="row g-3">
+        <!-- CARD -->
         <div class="col-lg-3 col-md-6">
-          <div class="stats-card">
-            <div class="stats-icon bg-success">
-              <i class="bi bi-bag-check-fill"></i>
-            </div>
+          <div class="stats-simple-card">
+            <i class="bi bi-bag-check"></i>
 
             <div>
-              <h3>1.254</h3>
+              <h4>1.254</h4>
               <p>Total Penjualan</p>
             </div>
           </div>
         </div>
 
+        <!-- CARD -->
         <div class="col-lg-3 col-md-6">
-          <div class="stats-card">
-            <div class="stats-icon bg-warning">
-              <i class="bi bi-currency-dollar"></i>
-            </div>
+          <div class="stats-simple-card">
+            <i class="bi bi-cash-stack"></i>
 
             <div>
-              <h3>Rp 12 Jt</h3>
-              <p>Total Pendapatan</p>
+              <h4>Rp 12 Jt</h4>
+              <p>Pendapatan</p>
             </div>
           </div>
         </div>
 
+        <!-- CARD -->
         <div class="col-lg-3 col-md-6">
-          <div class="stats-card">
-            <div class="stats-icon bg-primary">
-              <i class="bi bi-box-seam-fill"></i>
-            </div>
+          <div class="stats-simple-card">
+            <i class="bi bi-box-seam"></i>
 
             <div>
-              <h3>124</h3>
-              <p>Produk Tersedia</p>
+              <h4>124</h4>
+              <p>Produk</p>
             </div>
           </div>
         </div>
 
+        <!-- CARD -->
         <div class="col-lg-3 col-md-6">
-          <div class="stats-card">
-            <div class="stats-icon bg-danger">
-              <i class="bi bi-people-fill"></i>
-            </div>
+          <div class="stats-simple-card">
+            <i class="bi bi-people"></i>
 
             <div>
-              <h3>542</h3>
+              <h4>542</h4>
               <p>Pelanggan</p>
             </div>
           </div>
@@ -304,6 +300,38 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+
+      <!-- MARGIN PROFIT PRODUK -->
+      <div class="dashboard-card mt-4">
+        <div
+          class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-3"
+        >
+          <div>
+            <h4 class="fw-bold text-success">Margin Profit per Produk</h4>
+
+            <p class="text-muted mb-0">
+              Perbandingan harga modal dan keuntungan setiap komoditas
+            </p>
+          </div>
+
+          <select class="form-select w-auto">
+            <option>Bulan Ini</option>
+            <option>3 Bulan</option>
+            <option>1 Tahun</option>
+          </select>
+        </div>
+
+        <!-- WRAPPER -->
+        <div style="height: 400px">
+          <canvas id="marginChart"></canvas>
+        </div>
+
+        <!-- INSIGHT -->
+        <div class="alert alert-warning mt-4 mb-0">
+          <strong>Insight:</strong>
+          Beras Premium memberikan keuntungan terbesar dibanding produk lainnya.
         </div>
       </div>
 

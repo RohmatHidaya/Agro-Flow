@@ -149,3 +149,87 @@ if (profitDonutCtx) {
     },
   });
 }
+
+// ===============================
+// MARGIN PROFIT CHART
+// ===============================
+
+const marginCanvas = document.getElementById("marginChart");
+
+if (marginCanvas) {
+  new Chart(marginCanvas, {
+    type: "bar",
+
+    data: {
+      labels: ["Beras Premium", "Jagung Pipil", "Singkong Segar"],
+
+      datasets: [
+        {
+          label: "Harga Modal",
+
+          data: [40000, 3000, 1200],
+
+          backgroundColor: "rgba(244, 67, 54, 0.8)",
+
+          borderRadius: 6,
+        },
+
+        {
+          label: "Margin Profit",
+
+          data: [35000, 3000, 1300],
+
+          backgroundColor: "rgba(46, 125, 50, 0.8)",
+
+          borderRadius: 6,
+        },
+      ],
+    },
+
+    options: {
+      responsive: true,
+
+      maintainAspectRatio: false,
+
+      plugins: {
+        legend: {
+          position: "top",
+        },
+
+        tooltip: {
+          callbacks: {
+            label: function (context) {
+              return (
+                context.dataset.label +
+                ": Rp " +
+                context.raw.toLocaleString("id-ID")
+              );
+            },
+          },
+        },
+      },
+
+      scales: {
+        x: {
+          stacked: true,
+
+          grid: {
+            display: false,
+          },
+        },
+
+        y: {
+          stacked: true,
+
+          beginAtZero: true,
+
+          ticks: {
+            callback: function (value) {
+              return "Rp " + value.toLocaleString("id-ID");
+            },
+          },
+        },
+      },
+    },
+  });
+}
