@@ -41,7 +41,7 @@
               <a class="nav-link active" href="fitur.html">Fitur</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="market-komoditas.html">Market</a>
+              <a class="nav-link" href="market-komoditas.html">Marketplace</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="kontak.html">Kontak</a>
@@ -101,13 +101,21 @@
       <div class="container">
         <div class="row g-4 mb-4">
           <div class="col-md-4">
-            <div class="agro-card">
-              <h5 class="fw-bold text-success">Informasi Cuaca</h5>
-              <p>
-                Menampilkan informasi cuaca harian seperti suhu, kelembaban, dan
-                prediksi hujan. (Nanti bisa dihubungkan API cuaca).
-              </p>
-            </div>
+            <a href="dashboard/cuaca.html" class="text-decoration-none">
+              <div class="agro-card h-100">
+                <h5 class="fw-bold text-success">
+                  <i class="bi bi-cloud-sun-fill me-2"></i>
+                  Informasi Cuaca
+                </h5>
+
+                <p class="text-dark">
+                  Lihat informasi cuaca harian, suhu, kelembaban, kecepatan
+                  angin, dan prediksi hujan untuk mendukung kegiatan pertanian.
+                </p>
+
+                <span class="text-success fw-semibold"> Lihat Detail</span>
+              </div>
+            </a>
           </div>
 
           <div class="col-md-4">
@@ -131,37 +139,104 @@
           </div>
         </div>
 
-        <!-- Form Input -->
         <div class="agro-card">
           <h4 class="fw-bold text-success">Buat Jadwal Tanam Otomatis</h4>
+
           <p class="text-muted">
-            Masukkan tanggal mulai tanam untuk mendapatkan jadwal tahapan
-            budidaya hingga panen.
+            Masukkan data lahan dan tanaman untuk menghasilkan jadwal budidaya
+            otomatis hingga panen.
           </p>
 
           <div class="row g-3">
+            <!-- Komoditas -->
             <div class="col-md-4">
-              <label class="form-label fw-semibold">Pilih Komoditas</label>
+              <label class="form-label fw-semibold">Komoditas</label>
               <select class="form-select" id="komoditas">
-                <option value="padi">Padi</option>
-                <option value="jagung">Jagung</option>
-                <option value="singkong">Singkong</option>
+                <option selected disabled>Pilih Komoditas</option>
+                <option>Padi</option>
+                <option>Jagung</option>
+                <option>Singkong</option>
+                <option>Kedelai</option>
+                <option>Cabai</option>
               </select>
             </div>
 
+            <!-- Varietas -->
             <div class="col-md-4">
-              <label class="form-label fw-semibold">Tanggal Mulai Tanam</label>
+              <label class="form-label fw-semibold">Varietas</label>
+              <input
+                type="text"
+                class="form-control"
+                id="varietas"
+                placeholder="Contoh: Ciherang"
+              />
+            </div>
+
+            <!-- Tanggal Tanam -->
+            <div class="col-md-4">
+              <label class="form-label fw-semibold">Tanggal Tanam</label>
               <input type="date" class="form-control" id="tanggalTanam" />
             </div>
 
-            <div class="col-md-4 d-flex align-items-end">
+            <!-- Luas Lahan -->
+            <div class="col-md-4">
+              <label class="form-label fw-semibold">Luas Lahan (Ha)</label>
+              <input
+                type="number"
+                class="form-control"
+                id="luasLahan"
+                placeholder="Contoh: 1"
+              />
+            </div>
+
+            <!-- Lokasi -->
+            <div class="col-md-4">
+              <label class="form-label fw-semibold">Lokasi</label>
+              <input
+                type="text"
+                class="form-control"
+                id="lokasi"
+                placeholder="Contoh: Bengkulu"
+              />
+            </div>
+
+            <!-- Jenis Tanah -->
+            <div class="col-md-4">
+              <label class="form-label fw-semibold">Jenis Tanah</label>
+              <select class="form-select" id="jenisTanah">
+                <option selected disabled>Pilih Jenis Tanah</option>
+                <option>Lempung</option>
+                <option>Berpasir</option>
+                <option>Liat</option>
+                <option>Humus</option>
+                <option>Gambut</option>
+              </select>
+            </div>
+
+            <!-- Sumber Air -->
+            <div class="col-md-4">
+              <label class="form-label fw-semibold">Sumber Air</label>
+              <select class="form-select" id="sumberAir">
+                <option selected disabled>Pilih Sumber Air</option>
+                <option>Irigasi</option>
+                <option>Tadah Hujan</option>
+                <option>Sumur</option>
+                <option>Sungai</option>
+              </select>
+            </div>
+
+            <!-- Tombol -->
+            <div class="col-md-8 d-flex align-items-end">
               <button class="btn agro-btn-green w-100" onclick="buatRencana()">
-                Buat Kalender
+                <i class="bi bi-calendar-check me-2"></i>
+                Buat Jadwal Tanam
               </button>
             </div>
           </div>
 
           <hr class="my-4" />
+
+          <!-- Hasil Kalender -->
           <div id="hasilPlan"></div>
         </div>
       </div>

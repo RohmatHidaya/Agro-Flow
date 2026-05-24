@@ -47,7 +47,7 @@
         </li>
 
         <li>
-          <a href="#">
+          <a href="jadwal-tanam.html">
             <i class="bi bi-calendar-check-fill"></i>
             Jadwal Tanam
           </a>
@@ -61,7 +61,7 @@
         </li>
 
         <li>
-          <a href="#">
+          <a href="profile.html">
             <i class="bi bi-person-fill"></i>
             Profile
           </a>
@@ -167,6 +167,107 @@
         </div>
       </div>
 
+      <div class="dashboard-card mt-4">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <div>
+            <h4 class="fw-bold text-success">
+              <i class="bi bi-plus-circle-fill"></i>
+              Tambah Produk Panen
+            </h4>
+
+            <p class="text-muted mb-0">
+              Tambahkan hasil panen untuk dipublikasikan ke marketplace Agro
+              Flow
+            </p>
+          </div>
+        </div>
+
+        <form>
+          <div class="row">
+            <!-- Nama Produk -->
+            <div class="col-md-6 mb-3">
+              <label class="form-label">Nama Produk</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Contoh: Beras Premium"
+              />
+            </div>
+
+            <!-- Kategori -->
+            <div class="col-md-6 mb-3">
+              <label class="form-label">Kategori</label>
+              <select class="form-select">
+                <option>Pilih Kategori</option>
+                <option>Padi</option>
+                <option>Jagung</option>
+                <option>Singkong</option>
+                <option>Cabai</option>
+                <option>Sayuran</option>
+                <option>Buah-buahan</option>
+              </select>
+            </div>
+
+            <!-- Harga -->
+            <div class="col-md-4 mb-3">
+              <label class="form-label">Harga Jual (Rp)</label>
+              <input type="number" class="form-control" placeholder="75000" />
+            </div>
+
+            <!-- Stok -->
+            <div class="col-md-4 mb-3">
+              <label class="form-label">Stok (Kg)</label>
+              <input type="number" class="form-control" placeholder="100" />
+            </div>
+
+            <!-- Kondisi -->
+            <div class="col-md-4 mb-3">
+              <label class="form-label">Kondisi</label>
+              <select class="form-select">
+                <option>Baru Dipanen</option>
+                <option>Kering</option>
+                <option>Siap Distribusi</option>
+              </select>
+            </div>
+
+            <!-- Tanggal Panen -->
+            <div class="col-md-6 mb-3">
+              <label class="form-label">Tanggal Panen</label>
+              <input type="date" class="form-control" />
+            </div>
+
+            <!-- Upload Foto -->
+            <div class="col-md-6 mb-3">
+              <label class="form-label">Foto Produk</label>
+              <input type="file" class="form-control" />
+            </div>
+
+            <!-- Deskripsi -->
+            <div class="col-12 mb-3">
+              <label class="form-label">Deskripsi Produk</label>
+
+              <textarea
+                class="form-control"
+                rows="4"
+                placeholder="Masukkan deskripsi produk..."
+              ></textarea>
+            </div>
+
+            <!-- Tombol -->
+            <div class="col-12">
+              <button type="submit" class="btn market-btn">
+                <i class="bi bi-save"></i>
+                Simpan Produk
+              </button>
+
+              <button type="reset" class="btn btn-outline-secondary ms-2">
+                Reset
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+
       <!-- TREN OMZET & PROFIT -->
       <div class="dashboard-card mt-4">
         <div
@@ -208,6 +309,70 @@
           <strong>Insight:</strong>
           Profit mengalami peningkatan signifikan pada kuartal ketiga karena
           tingginya permintaan pasar terhadap hasil panen.
+        </div>
+      </div>
+
+      <div class="dashboard-card mt-4">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <div>
+            <h4 class="fw-bold text-success">Produk Saya</h4>
+
+            <p class="text-muted mb-0">
+              Daftar hasil panen yang telah dipublikasikan
+            </p>
+          </div>
+        </div>
+
+        <div class="table-responsive">
+          <table class="table align-middle">
+            <thead>
+              <tr>
+                <th>Produk</th>
+                <th>Harga</th>
+                <th>Stok</th>
+                <th>Status</th>
+                <th>Aksi</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Beras Premium</td>
+                <td>Rp 75.000</td>
+                <td>120 Kg</td>
+                <td>
+                  <span class="badge bg-success"> Aktif </span>
+                </td>
+                <td>
+                  <button class="btn btn-warning btn-sm">
+                    <i class="bi bi-pencil"></i>
+                  </button>
+
+                  <button class="btn btn-danger btn-sm">
+                    <i class="bi bi-trash"></i>
+                  </button>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Jagung Pipil</td>
+                <td>Rp 6.000</td>
+                <td>250 Kg</td>
+                <td>
+                  <span class="badge bg-secondary"> Habis </span>
+                </td>
+                <td>
+                  <button class="btn btn-warning btn-sm">
+                    <i class="bi bi-pencil"></i>
+                  </button>
+
+                  <button class="btn btn-danger btn-sm">
+                    <i class="bi bi-trash"></i>
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
 

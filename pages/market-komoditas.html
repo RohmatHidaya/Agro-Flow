@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Market Komoditas - Agro Flow</title>
+    <title>Marketplace Komoditas - Agro Flow</title>
 
     <link rel="stylesheet" href="../assets/css/style.css" />
     <link
@@ -46,7 +46,9 @@
               <a class="nav-link" href="fitur.html">Fitur</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="market-komoditas.html">Market</a>
+              <a class="nav-link active" href="market-komoditas.html"
+                >Marketplace</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="kontak.html">Kontak</a>
@@ -94,9 +96,9 @@
     <!-- Header -->
     <section class="agro-page-header">
       <div class="container text-center">
-        <h2 class="agro-section-title">Market Komoditas</h2>
+        <h2 class="agro-section-title">Marketplace Komoditas</h2>
         <p class="agro-muted">
-          Informasi peluang pasar dan nilai ekonomi komoditas pertanian desa.
+          peluang pasar dan nilai ekonomi komoditas pertanian desa.
         </p>
       </div>
     </section>
@@ -104,367 +106,157 @@
     <!-- Content -->
     <section class="agro-section">
       <div class="container">
-        <!-- Tabs -->
-        <ul
-          class="nav nav-pills mb-4 justify-content-center"
-          id="marketTab"
-          role="tablist"
+        <!-- TOP BAR -->
+        <div
+          class="d-flex justify-content-between align-items-center flex-wrap gap-3 mb-5"
         >
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link active"
-              id="harga-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#harga"
-              type="button"
-            >
-              Informasi Harga
-            </button>
-          </li>
+          <div>
+            <h3 class="fw-bold text-success">Marketplace Komoditas</h3>
 
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link"
-              id="jual-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#jual"
-              type="button"
-            >
-              Marketplace
-            </button>
-          </li>
-        </ul>
+            <p class="text-muted mb-0">
+              Beli hasil panen langsung dari petani tanpa perantara.
+            </p>
+          </div>
 
-        <div class="tab-content" id="marketTabContent">
-          <!-- TAB 1 -->
-          <div class="tab-pane fade show active" id="harga" role="tabpanel">
-            <!-- Harga beras saat ini -->
-            <div class="row g-4">
-              <!-- BERAS -->
-              <div class="col-md-4">
-                <div class="agro-card h-100">
-                  <h4 class="fw-bold text-success">🌾 Beras</h4>
+          <div class="d-flex gap-2 flex-wrap">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Cari komoditas..."
+              style="width: 250px"
+            />
 
-                  <h2 class="fw-bold mt-3">Rp 13.500/kg</h2>
-                  <p class="text-success">Prediksi naik 8% bulan depan</p>
+            <select class="form-select">
+              <option selected>Semua Kategori</option>
+              <option>Beras</option>
+              <option>Jagung</option>
+              <option>Singkong</option>
+              <option>Cabai</option>
+            </select>
+          </div>
+        </div>
 
-                  <div class="progress mb-3" style="height: 10px">
-                    <div
-                      class="progress-bar bg-success"
-                      style="width: 80%"
-                    ></div>
-                  </div>
+        <!-- PRODUK -->
+        <div class="row g-4">
+          <!-- CARD 1 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="market-card h-100">
+              <div class="market-badge">Best Seller</div>
 
-                  <!-- <img
-                    src=""
-                    class="img-fluid rounded"
-                    alt="Beras"
-                  /> -->
+              <img src="../assets/image/prod1.jpg" class="market-img" alt="" />
 
-                  <p class="text-muted mt-3">
-                    Harga beras diprediksi meningkat karena permintaan pasar
-                    yang stabil dan produksi menurun saat musim kemarau.
-                  </p>
-                </div>
-              </div>
-
-              <!-- JAGUNG -->
-              <div class="col-md-4">
-                <div class="agro-card h-100">
-                  <h4 class="fw-bold text-success">🌽 Jagung</h4>
-
-                  <h2 class="fw-bold mt-3">Rp 6.200/kg</h2>
-                  <p class="text-warning">Prediksi stabil minggu ini</p>
-
-                  <div class="progress mb-3" style="height: 10px">
-                    <div
-                      class="progress-bar bg-warning"
-                      style="width: 60%"
-                    ></div>
-                  </div>
-
-                  <!-- <img
-                    src="https://images.unsplash.com/photo-1601593768799-76d7f6a8f5b4?q=80&w=1200&auto=format&fit=crop"
-                    class="img-fluid rounded"
-                    alt="Jagung"
-                  /> -->
-
-                  <p class="text-muted mt-3">
-                    Jagung memiliki pasar industri pakan ternak yang cukup
-                    stabil sehingga harga relatif aman.
-                  </p>
-                </div>
-              </div>
-
-              <!-- SINGKONG -->
-              <div class="col-md-4">
-                <div class="agro-card h-100">
-                  <h4 class="fw-bold text-success">🥔 Singkong</h4>
-
-                  <h2 class="fw-bold mt-3">Rp 2.800/kg</h2>
-                  <p class="text-danger">Prediksi turun 3%</p>
-
-                  <div class="progress mb-3" style="height: 10px">
-                    <div
-                      class="progress-bar bg-danger"
-                      style="width: 40%"
-                    ></div>
-                  </div>
-
-                  <!-- <img
-                    src="https://images.unsplash.com/photo-1615485291234-9fbc1c8c0d5f?q=80&w=1200&auto=format&fit=crop"
-                    class="img-fluid rounded"
-                    alt="Singkong"
-                  /> -->
-
-                  <p class="text-muted mt-3">
-                    Produksi singkong meningkat sehingga harga pasar diprediksi
-                    sedikit menurun.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Prediksi Harga Beras -->
-            <div class="agro-card mb-4">
-              <h4 class="fw-bold text-success mb-3">
-                Prediksi Harga Komoditas
-              </h4>
-              <canvas id="hargaChart"></canvas>
-            </div>
-
-            <!-- PERBANDINGAN HARGA ANTAR WILAYAH -->
-            <div class="agro-card mt-4">
-              <div
-                class="d-flex justify-content-between align-items-center flex-wrap mb-4"
-              >
-                <div>
-                  <h4 class="fw-bold text-success">
-                    Perbandingan Harga Antar Wilayah
-                  </h4>
-
-                  <p class="text-muted mb-0">
-                    Perbandingan harga komoditas di beberapa wilayah pasar.
-                  </p>
+              <div class="market-content">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-2"
+                >
+                  <span class="market-category">Beras</span>
+                  <span class="market-rating">⭐ 4.9</span>
                 </div>
 
-                <div class="d-flex gap-2 flex-wrap mt-3 mt-md-0">
-                  <!-- FILTER KOMODITAS -->
-                  <select class="form-select agro-filter" id="komoditasFilter">
-                    <option selected>Beras</option>
-                    <option>Jagung</option>
-                    <option>Singkong</option>
-                  </select>
+                <h4 class="market-title">Beras Premium Organik</h4>
 
-                  <!-- FILTER PROVINSI -->
-                  <select class="form-select agro-filter" id="provinsiFilter">
-                    <option selected>Lampung</option>
-                    <option>DKI Jakarta</option>
-                    <option>Jawa Barat</option>
-                    <option>Jawa Tengah</option>
-                    <option>Jawa Timur</option>
-                    <option>Sumatera Selatan</option>
-                    <option>Sumatera Utara</option>
-                    <option>Kalimantan Selatan</option>
-                    <option>Sulawesi Selatan</option>
-                    <option>Papua</option>
-                  </select>
-                </div>
-              </div>
+                <p class="market-desc">
+                  Beras premium hasil panen petani lokal dengan kualitas
+                  terbaik.
+                </p>
 
-              <canvas id="wilayahChart"></canvas>
-
-              <!-- INFO -->
-              <div class="row mt-4 g-3">
-                <div class="col-md-4">
-                  <div class="alert alert-success mb-0">
-                    <h6 class="fw-bold">Harga Tertinggi</h6>
-                    <p class="mb-0">Kemiling Rp 14.500/kg</p>
-                  </div>
+                <div class="market-price">
+                  Rp 75.000
+                  <span>/ 5 Kg</span>
                 </div>
 
-                <div class="col-md-4">
-                  <div class="alert alert-success mb-0">
-                    <h6 class="fw-bold">Harga Stabil</h6>
-                    <p class="mb-0">Kedaton Rp 13.500/kg</p>
-                  </div>
-                </div>
+                <div class="market-footer">
+                  <small class="market-location">
+                    <i class="bi bi-geo-alt-fill"></i>
+                    Bandar Lampung
+                  </small>
 
-                <div class="col-md-4">
-                  <div class="alert alert-success mb-0">
-                    <h6 class="fw-bold">Harga Terendah</h6>
-                    <p class="mb-0">Tanjungkarang Pusat Rp 12.000/kg</p>
-                  </div>
+                  <button class="btn market-btn">
+                    <i class="bi bi-cart-fill"></i>
+                    Beli Sekarang
+                  </button>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- TAB 2 -->
-          <div class="tab-pane fade" id="jual" role="tabpanel">
-            <!-- TOP BAR -->
-            <div
-              class="d-flex justify-content-between align-items-center flex-wrap gap-3 mb-4"
-            >
-              <div>
-                <h4 class="fw-bold text-success mb-1">Marketplace Komoditas</h4>
-                <p class="text-muted mb-0">
-                  Beli hasil panen langsung dari petani desa.
+          <!-- CARD 2 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="market-card h-100">
+              <div class="market-badge warning">Stok Banyak</div>
+
+              <img src="../assets/image/prod2.jpg" class="market-img" alt="" />
+
+              <div class="market-content">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-2"
+                >
+                  <span class="market-category">Jagung</span>
+                  <span class="market-rating">⭐ 4.7</span>
+                </div>
+
+                <h4 class="market-title">Jagung Pipil Kering</h4>
+
+                <p class="market-desc">
+                  Cocok untuk pakan ternak dan kebutuhan industri pangan.
                 </p>
-              </div>
 
-              <div class="d-flex gap-2 flex-wrap">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Cari komoditas..."
-                  style="width: 240px"
-                />
+                <div class="market-price">
+                  Rp 6.000
+                  <span>/ Kg</span>
+                </div>
 
-                <select class="form-select">
-                  <option selected>Semua Kategori</option>
-                  <option>Beras</option>
-                  <option>Jagung</option>
-                  <option>Singkong</option>
-                </select>
+                <div class="market-footer">
+                  <small class="market-location">
+                    <i class="bi bi-geo-alt-fill"></i>
+                    Kedaton
+                  </small>
+
+                  <button class="btn market-btn">
+                    <i class="bi bi-cart-fill"></i>
+                    Beli Sekarang
+                  </button>
+                </div>
               </div>
             </div>
+          </div>
 
-            <!-- PRODUK -->
-            <div class="row g-4">
-              <!-- CARD 1 -->
-              <div class="col-lg-4 col-md-6">
-                <div class="market-card h-100">
-                  <div class="market-badge">Best Seller</div>
+          <!-- CARD 3 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="market-card h-100">
+              <div class="market-badge danger">Promo</div>
 
-                  <img
-                    src="../assets/image/prod1.jpg"
-                    class="market-img"
-                    alt=""
-                  />
+              <img src="../assets/image/prod3.jpg" class="market-img" alt="" />
 
-                  <div class="market-content">
-                    <div
-                      class="d-flex justify-content-between align-items-center mb-2"
-                    >
-                      <span class="market-category">Beras</span>
-                      <span class="market-rating">⭐ 4.9</span>
-                    </div>
-
-                    <h4 class="market-title">Beras Premium Organik</h4>
-
-                    <p class="market-desc">
-                      Beras premium hasil panen petani lokal dengan kualitas
-                      terbaik.
-                    </p>
-
-                    <div class="market-price">
-                      Rp 75.000
-                      <span>/ 5 Kg</span>
-                    </div>
-
-                    <div class="market-footer">
-                      <small class="market-location">
-                        <i class="bi bi-geo-alt-fill"></i>
-                        Bandar Lampung
-                      </small>
-
-                      <button class="btn market-btn">
-                        <i class="bi bi-cart-fill"></i>
-                        Beli Sekarang
-                      </button>
-                    </div>
-                  </div>
+              <div class="market-content">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-2"
+                >
+                  <span class="market-category">Singkong</span>
+                  <span class="market-rating">⭐ 4.6</span>
                 </div>
-              </div>
 
-              <!-- CARD 2 -->
-              <div class="col-lg-4 col-md-6">
-                <div class="market-card h-100">
-                  <div class="market-badge warning">Stok Banyak</div>
+                <h4 class="market-title">Singkong Segar</h4>
 
-                  <img
-                    src="../assets/image/prod2.jpg"
-                    class="market-img"
-                    alt=""
-                  />
+                <p class="market-desc">
+                  Hasil panen langsung dari petani desa tanpa perantara.
+                </p>
 
-                  <div class="market-content">
-                    <div
-                      class="d-flex justify-content-between align-items-center mb-2"
-                    >
-                      <span class="market-category">Jagung</span>
-                      <span class="market-rating">⭐ 4.7</span>
-                    </div>
-
-                    <h4 class="market-title">Jagung Pipil Kering</h4>
-
-                    <p class="market-desc">
-                      Cocok untuk pakan ternak dan kebutuhan industri pangan.
-                    </p>
-
-                    <div class="market-price">
-                      Rp 6.000
-                      <span>/ Kg</span>
-                    </div>
-
-                    <div class="market-footer">
-                      <small class="market-location">
-                        <i class="bi bi-geo-alt-fill"></i>
-                        Kedaton
-                      </small>
-
-                      <button class="btn market-btn">
-                        <i class="bi bi-cart-fill"></i>
-                        Beli Sekarang
-                      </button>
-                    </div>
-                  </div>
+                <div class="market-price">
+                  Rp 2.500
+                  <span>/ Kg</span>
                 </div>
-              </div>
 
-              <!-- CARD 3 -->
-              <div class="col-lg-4 col-md-6">
-                <div class="market-card h-100">
-                  <div class="market-badge danger">Promo</div>
+                <div class="market-footer">
+                  <small class="market-location">
+                    <i class="bi bi-geo-alt-fill"></i>
+                    Raja Basa
+                  </small>
 
-                  <img
-                    src="../assets/image/prod3.jpg"
-                    class="market-img"
-                    alt=""
-                  />
-
-                  <div class="market-content">
-                    <div
-                      class="d-flex justify-content-between align-items-center mb-2"
-                    >
-                      <span class="market-category">Singkong</span>
-                      <span class="market-rating">⭐ 4.6</span>
-                    </div>
-
-                    <h4 class="market-title">Singkong Segar</h4>
-
-                    <p class="market-desc">
-                      Hasil panen langsung dari petani desa tanpa perantara.
-                    </p>
-
-                    <div class="market-price">
-                      Rp 2.500
-                      <span>/ Kg</span>
-                    </div>
-
-                    <div class="market-footer">
-                      <small class="market-location">
-                        <i class="bi bi-geo-alt-fill"></i>
-                        Raja Basa
-                      </small>
-
-                      <button class="btn market-btn">
-                        <i class="bi bi-cart-fill"></i>
-                        Beli Sekarang
-                      </button>
-                    </div>
-                  </div>
+                  <button class="btn market-btn">
+                    <i class="bi bi-cart-fill"></i>
+                    Beli Sekarang
+                  </button>
                 </div>
               </div>
             </div>
