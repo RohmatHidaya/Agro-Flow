@@ -128,9 +128,14 @@
               </div>
 
               <div class="text-end">
-                <h1 class="display-4 fw-bold text-success mb-0">28°C</h1>
+                <h1
+                  id="temperature"
+                  class="display-4 fw-bold text-success mb-0"
+                >
+                  --°C
+                </h1>
 
-                <p class="text-muted">Cerah Berawan</p>
+                <p id="weather-desc" class="text-muted">Memuat Data...</p>
               </div>
             </div>
 
@@ -139,7 +144,7 @@
                 <div class="p-3 rounded-4 bg-light">
                   <i class="bi bi-droplet-fill text-primary fs-3"></i>
 
-                  <h5 class="mt-2 mb-1">75%</h5>
+                  <h5 id="humidity" class="mt-2 mb-1">--</h5>
 
                   <small class="text-muted">Kelembapan</small>
                 </div>
@@ -149,7 +154,7 @@
                 <div class="p-3 rounded-4 bg-light">
                   <i class="bi bi-wind fs-3 text-success"></i>
 
-                  <h5 class="mt-2 mb-1">12 Km/h</h5>
+                  <h5 id="wind" class="mt-2 mb-1">--Km/h</h5>
 
                   <small class="text-muted">Angin</small>
                 </div>
@@ -159,7 +164,7 @@
                 <div class="p-3 rounded-4 bg-light">
                   <i class="bi bi-cloud-rain-heavy-fill fs-3 text-info"></i>
 
-                  <h5 class="mt-2 mb-1">20%</h5>
+                  <h5 id="rain" class="mt-2 mb-1">--%</h5>
 
                   <small class="text-muted">Peluang Hujan</small>
                 </div>
@@ -169,7 +174,7 @@
                 <div class="p-3 rounded-4 bg-light">
                   <i class="bi bi-sunrise-fill fs-3 text-warning"></i>
 
-                  <h5 class="mt-2 mb-1">06:10</h5>
+                  <h5 id="sunrise" class="mt-2 mb-1">--:--</h5>
 
                   <small class="text-muted">Matahari Terbit</small>
                 </div>
@@ -183,28 +188,13 @@
           <div class="dashboard-card h-100">
             <h4 class="fw-bold text-success mb-4">Peringatan Cuaca</h4>
 
-            <div class="alert alert-warning rounded-4 border-0">
-              <div class="d-flex gap-3">
-                <i class="bi bi-exclamation-triangle-fill fs-3"></i>
-
-                <div>
-                  <h6 class="fw-bold mb-1">Potensi Hujan</h6>
-
-                  <small> Diperkirakan hujan ringan pada malam hari. </small>
-                </div>
-              </div>
-            </div>
-
             <div class="alert alert-success rounded-4 border-0">
               <div class="d-flex gap-3">
                 <i class="bi bi-check-circle-fill fs-3"></i>
 
                 <div>
                   <h6 class="fw-bold mb-1">Kondisi Ideal</h6>
-
-                  <small>
-                    Cuaca cocok untuk aktivitas pertanian pagi hari.
-                  </small>
+                  <small id="weatherAlert"> Memuat peringatan cuaca... </small>
                 </div>
               </div>
             </div>
@@ -216,9 +206,9 @@
       <div class="dashboard-card mt-4">
         <div class="d-flex justify-content-between align-items-center mb-4">
           <div>
-            <h4 class="fw-bold text-success">Grafik Suhu Mingguan</h4>
+            <h4 class="fw-bold text-success">Grafik Suhu</h4>
 
-            <p class="text-muted mb-0">Perubahan suhu dalam 7 hari terakhir</p>
+            <p class="text-muted mb-0">Perubahan suhu dalam 3 hari</p>
           </div>
 
           <select class="form-select dashboard-filter">
@@ -231,6 +221,13 @@
         <canvas id="weatherChart"></canvas>
       </div>
 
+      <!-- Kelembapan -->
+      <div class="dashboard-card mt-4">
+        <h4 class="fw-bold text-success">Grafik Kelembapan</h4>
+
+        <canvas id="humidityChart"></canvas>
+      </div>
+
       <!-- FORECAST -->
       <div class="dashboard-card mt-4">
         <div class="d-flex justify-content-between align-items-center mb-4">
@@ -241,7 +238,7 @@
           </div>
         </div>
 
-        <div class="row g-4">
+        <div id="forecastContainer" class="row g-4">
           <div class="col-md">
             <div class="text-center p-4 bg-light rounded-4">
               <h6>Sen</h6>
@@ -307,41 +304,7 @@
 
     <!-- CHART JS -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-    <script>
-      const weatherCtx = document.getElementById("weatherChart");
-
-      new Chart(weatherCtx, {
-        type: "line",
-
-        data: {
-          labels: ["Sen", "Sel", "Rab", "Kam", "Jum", "Sab", "Min"],
-
-          datasets: [
-            {
-              label: "Suhu",
-
-              data: [27, 29, 25, 26, 30, 28, 27],
-
-              tension: 0.4,
-
-              fill: true,
-            },
-          ],
-        },
-
-        options: {
-          responsive: true,
-
-          plugins: {
-            legend: {
-              display: true,
-            },
-          },
-        },
-      });
-    </script>
-
+    <script src="../../assets/js/cuaca.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
